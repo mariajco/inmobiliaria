@@ -1,0 +1,26 @@
+package inmobiliaria;
+
+public class Main {
+    public static void main(String[] args) {
+        // Crear una instancia de Casa
+        Casa casa = new Casa(1, 150, "Calle Principal 123", 3, 2, 2, 10, 500);
+
+        // Acceder a los atributos de Casa
+        System.out.println("Número de pisos de la casa: " + casa.getNumPisos());
+        System.out.println("Distancia a la cabecera municipal: " + casa.getDistanciaCabeceraMunicipal());
+        System.out.println("Altitud sobre el nivel del mar: " + casa.getAltitud());
+
+        // Crear una instancia de Apartamento
+        Apartamento apartamento = new Apartamento(2, 80, "Calle Secundaria 456", 2, 1, false, 200);
+
+        // Acceder a los atributos de Apartamento
+        System.out.println("Es apartaestudio: " + apartamento.isEsApartaestudio());
+        System.out.println("Valor de administración del apartamento: " + apartamento.getValorAdministracion());
+
+        // Crear una instancia de Local
+        Local local = new Local(3, 100, "Avenida Principal 789", "Interno");
+
+        // Acceder a los atributos de Local
+        System.out.println("Localización del local: " + local.getLocalizacion());
+    }
+}
